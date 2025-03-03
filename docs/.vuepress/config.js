@@ -12,7 +12,7 @@ import {
 } from './notes'
 
 export default defineUserConfig({
-  base: '/',
+  base: '/notion-blog/',
   lang: 'zh-CN',
   title: 'Notion Blog',
   description: 'notion blog based on vuepress-theme-plume',
