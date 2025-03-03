@@ -1,0 +1,38 @@
+{
+  "name": "notion-blog",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "notion blog based on vuepress-theme-plume",
+  "author": "dead_summer <2941325451@qq.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "^18.20.0 || >=20.0.0"
+  },
+  "scripts": {
+    "elog:init": "elog init",
+    "elog:sync": "elog sync -e .elog.env",
+    "elog:sync-java": "elog sync -c elog.java-config.js -e .elog.java.env",
+    "elog:clean": "elog clean",
+    "docs:dev": "vuepress dev docs",
+    "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "docs:preview": "http-server docs/.vuepress/dist",
+    "vp-update": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.20",
+    "http-server": "^14.1.1",
+    "sass-embedded": "^1.85.0",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.20",
+    "vuepress-theme-plume": "1.0.0-rc.133"
+  },
+  "dependencies": {
+    "@elog/cli": "^0.14.7",
+    "@google/generative-ai": "^0.22.0",
+    "dotenv": "^16.4.7",
+    "mermaid": "^11.4.1",
+    "openai": "^4.86.1",
+    "undici": "^7.4.0"
+  }
+}
